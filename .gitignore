@@ -1,0 +1,28 @@
+# Ignore build directory
+/build/
+
+# Ignore CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Ignore compiled object files
+*.o
+*.obj
+
+# Ignore compiled static libraries
+*.lib
+*.a
+
+# Ignore compiled dynamic libraries
+*.dll
+*.so
+*.dylib
+
+# Ignore executable files
+*.exe
+*.out
+
+# Ignore IDE setting files
+/.vscode/
