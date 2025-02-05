@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Regression</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .meta {
+            color: #777;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+        .content {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        blockquote {
+            font-style: italic;
+            border-left: 4px solid #ccc;
+            padding-left: 15px;
+            margin: 20px 0;
+            color: #555;
+        }
+        details {
+            margin-top: 20px;
+            background: #eeeeee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        details summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #333333;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+                margin: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>A Machine Learning Library in C++</code></h1>
+        <p class="meta">By Mateus Riff • Feb. 2025</p>
+        <div class="content">
+            <h2>C++ Machine Learning Library</h2>
+            <p>
+                This project is a simple yet effective Machine Learning library implemented in C++ using Object-Oriented Programming (OOP) principles.
+                It provides an abstraction layer for regression models, allowing users to easily train and use them for predictive tasks.
+            </p>
+            
+            <h3>OOP Principles in Action</h3>
+            <p>
+                The library follows OOP principles such as encapsulation, inheritance, abstraction, and polymorphism. The core class, <code>Regression</code>,
+                is an abstract base class that defines shared attributes and methods for its derived classes: <code>LinearRegression</code> and <code>LogisticRegression</code>.
+            </p>
+            <ul>
+                <li><strong>Encapsulation:</strong> The base class holds common data members such as model parameters and learning functions.</li>
+                <li><strong>Inheritance:</strong> The concrete regression classes inherit from <code>Regression</code>, ensuring code reuse and structure.</li>
+                <li><strong>Abstraction:</strong> Clients only interact with the interface without needing to know implementation details.</li>
+                <li><strong>Polymorphism:</strong> Each derived class implements its own version of cost computation and prediction methods.</li>
+            </ul>
+
+            <h3>Usage</h3>
+            <p>
+                The library can be built using CMake and easily integrated into other C++ projects. Clients can create, train, and use models with just a few lines of code:
+            </p>
+            <pre>
+#include &lt;vector&gt;
+#include "ml_lib/ml.h"
+
+int main() {
+    ml::LinearRegression model;
+    model.fit(X, y, 0.01f, 1000);
+    float prediction = model.predict({5.0f, 6.0f});
+    return 0;
+}
+            </pre>
+            
+            <h3>Evaluation</h3>
+            <p>
+                The library's models were tested against <code>scikit-learn</code> implementations. The <code>ml_cpp</code> Linear Regression model achieved a lower Mean Squared Error (MSE) than the equivalent in <code>scikit-learn</code>, demonstrating its efficiency. However, the Logistic Regression model performed worse, highlighting areas for potential improvement.
+            </p>
+            
+            <h3>Contributors & Resources</h3>
+            <p>
+                The project was developed by Mateus da Nóbrega Riff. It was guided by the course <a href="https://www.coursera.org/learn/machine-learning" target="_blank">Supervised Machine Learning: Regression and Classification</a>, and OpenAI models were occasionally consulted for troubleshooting and documentation.
+            </p>
+        </div>
+    </div>
+</body>
+
